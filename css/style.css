@@ -11,15 +11,15 @@
 html,
 body {
   font-feature-settings: "palt";
-  background-color: #fff;
+  background-color: #181818;
   position: relative;
 }
 
 body {
   font-size: 16px;
   line-height: 1.6;
-  font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  color: #333333;
+  font-family: serif;
+  color: #ffffff;
   letter-spacing: 0.05em;
   min-height: 100vh;
   padding-bottom: 100px;
@@ -67,7 +67,7 @@ header
 header {
   position: fixed;/* position: fixedにするとスクロールしても同じ位置に表示される */
   z-index: 2; /* z-indexはレイヤーの前後関係。数字が大きくなるほど手前 */
-  max-width: 1000px;/* max-widthは最大幅 ウィンドウが小さくなればそれに合わせてせまくなる */
+  max-width: 2000px;/* max-widthは最大幅 ウィンドウが小さくなればそれに合わせてせまくなる */
   top: 0;
   left: 0;
   right: 0;
@@ -80,7 +80,7 @@ header a {
 }
 
 header .inner {
-  background-color: #fff;
+  background-color: #3b3b3bb5;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -100,6 +100,7 @@ header .inner {
 #global_menu {
   display: flex;
   font-size: 23px;
+  font-family: serif;
   position: relative;
 }
 
@@ -109,6 +110,11 @@ header .inner {
   padding: 0px 13px;
   line-height: 1;
   position: relative;
+  color: #ffffff;
+}
+
+#global_menu a:hover{
+  color: rgb(118, 122, 158);
 }
 
 #global_menu li {
@@ -201,9 +207,11 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 ================================================= */
 .top_eye_catch {
   height: 500px;
-  color: #fff;
+  font-size: 100px;
+  color: #ffffff;
   font-weight: bold;
-  background-image: url(../images/top.jpg);/* 背景画像 */
+  font-family: serif;
+  background-image: url(../images/ハリポタ絵画.jpeg);/* 背景画像 */
   background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
   background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
@@ -253,8 +261,8 @@ a.link_btn{
 a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   opacity: 1;/* 半透明にならないように上書き */
   border-radius: 0;
-  color: #fff;
-  background-color: #333;
+  color: #2a2a2a;
+  background-color: #ffffff;
 }
 
 /* =================================================
