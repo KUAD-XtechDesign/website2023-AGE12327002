@@ -18,7 +18,7 @@ body {
 body {
   font-size: 16px;
   line-height: 1.6;
-  font-family: serif;
+  font-family: ;
   color: #ffffff;
   letter-spacing: 0.05em;
   min-height: 100vh;
@@ -211,7 +211,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   color: #ffffff;
   font-weight: bold;
   font-family: serif;
-  background-image: url(../images/ハリポタ絵画.jpeg);/* 背景画像 */
+  background-image: url(../images/USJ.jpeg);/* 背景画像 */
   background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
   background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
