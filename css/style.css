@@ -80,7 +80,7 @@ header a {
 }
 
 header .inner {
-  background-color: #3b3b3bb5;
+  background-color: #0047159d;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -98,6 +98,7 @@ header .inner {
 
 /* メニュー */
 #global_menu {
+  padding: 5px 0 0 0;
   display: flex;
   font-size: 23px;
   font-family: serif;
@@ -114,7 +115,7 @@ header .inner {
 }
 
 #global_menu a:hover{
-  color: rgb(118, 122, 158);
+  color: rgb(9, 255, 0);
 }
 
 #global_menu li {
@@ -123,12 +124,13 @@ header .inner {
 
 #global_menu li.current::before {
   content: "";
-  bottom: 2px;
+  bottom: 1px;
   position: absolute;
   width: 100%;
-  height: 10px;
+  height: 2px;
   background-color: #ccc;
 }
+
 
 #menu_btn{
   position: absolute;
@@ -228,6 +230,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 
 .each_link{
   display: flex;
+  margin: 0 0 30px 0;
 }
 
 .each_link .link_pic{
@@ -251,7 +254,7 @@ a.link_btn{
   text-decoration: none;
   font-weight: bold;
   display: block;
-  margin: 30px 0;
+  margin: 30px 0 0 0;
   border: 2px solid #666;
   padding: 5px;
   text-align: center;
@@ -261,9 +264,10 @@ a.link_btn{
 
 a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   opacity: 1;/* 半透明にならないように上書き */
-  border-radius: 0;
-  color: #2a2a2a;
-  background-color: #ffffff;
+  border-radius: ;
+  color: #ffffff;
+  background-color: #018e2b;
+  border: 2px solid #018e2b;
 }
 
 /* =================================================
@@ -296,7 +300,7 @@ worksページ
 .thumb_list li a {
   display: block;
   height: 120px;
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   opacity: 1;
   overflow: hidden;/* はみ出た部分は隠す */
 }
@@ -322,7 +326,7 @@ reportページ
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/report.jpg);
+  background-image: url(../images/usj_train.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -333,7 +337,7 @@ reportページ
 }
 
 .report {
-  border: 1px solid #ccc;
+  /* border: 1px solid #ccc; */
   padding: 40px;
 }
 
@@ -349,8 +353,12 @@ reportページ
 }
 
 .report .outline .pic {
-  width: 45%;
-  border: 3px solid #999;
+  width: 100%;
+  /* border: 3px solid #999; */
+}
+
+.report .outline .pic iframe {
+  width: 100%;
 }
 
 .report .outline .txt {
@@ -361,7 +369,7 @@ reportページ
 .report h1 {
   margin-bottom: 20px;
   padding-left: 10px;
-  border-left: 5px solid #ff9a02;
+  border-left: 5px solid #02ff35;
 }
 
 .ex_link {
@@ -408,4 +416,13 @@ profileページ
 ======================================================*/
 .mb_m {
   margin-bottom: 20px;
+}
+
+/*======================================================
+watasidao
+======================================================*/
+
+h2 {
+  font-size: 30px;
+  color: #018e2b;
 }
